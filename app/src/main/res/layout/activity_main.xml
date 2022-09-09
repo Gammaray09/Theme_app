@@ -4,43 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryLightColor"
+    android:background="@color/secondaryLightColor"
     tools:context=".MainActivity">
 
-
     <TextView
-        android:id="@+id/textView"
+        style="@style/TextViewCustom"
         android:layout_width="@dimen/textViewWidth"
         android:layout_height="@dimen/textViewHeight"
-        android:layout_marginStart="88dp"
-        android:layout_marginBottom="4dp"
-        android:padding="@dimen/editTextPadding"
-        android:text="TextView"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/bottomMargin"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingTop="@dimen/topPadding"
+        android:text="Hello World!"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="@dimen/bottomMargin"
+        android:width="@dimen/editTextWidth"
         android:ems="10"
+
         android:inputType="textPersonName"
-        android:hint="input"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="224dp"
+        android:layout_marginBottom="164dp"
         android:backgroundTint="@color/secondaryDarkColor"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        style="@style/TextViewCustom"
+        android:layout_width="400dp"
+        android:layout_height="@dimen/textViewHeight"
+        android:layout_marginBottom="264dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="@dimen/topPadding"
+        android:text="The Coolest App Ever"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
