@@ -21,4 +21,9 @@
         <item name="android:textColor">@color/primaryDarkColor</item>
         <item name="android:textSize">36sp</item>
     </style>
+
+    <style name="PlainTextCustom">
+        <item name="android:textColor">@color/primaryDarkColor</item>
+        <item name="android:textSize">36sp</item>
+    </style>
 </resources>
