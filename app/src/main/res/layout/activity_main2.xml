@@ -72,6 +72,7 @@
         android:ems="10"
         android:fontFamily="monospace"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="Name" />
 
 
