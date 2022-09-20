@@ -17,13 +17,21 @@
 
 
 
-    <style name="TextViewCustom">
-        <item name="android:textColor">@color/primaryDarkColor</item>
-        <item name="android:textSize">36sp</item>
-    </style>
 
     <style name="PlainTextCustom">
-        <item name="android:textColor">@color/primaryDarkColor</item>
-        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">175dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@color/secondaryColor</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">monospace</item>
     </style>
+
+    <style name="IconStyle">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
 </resources>
